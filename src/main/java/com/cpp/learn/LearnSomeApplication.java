@@ -19,7 +19,7 @@ public class LearnSomeApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(LearnSomeApplication.class, args);
-        LOGGER.error("application started");
+        LOGGER.info("application started");
         LOGGER_HEALTH.info("app started");
     }
 
