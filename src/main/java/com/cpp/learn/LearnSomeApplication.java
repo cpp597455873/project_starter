@@ -12,14 +12,12 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
         DataSourceAutoConfiguration.class
 })
 public class LearnSomeApplication {
-    private static final Logger LOGGER = LoggerFactory.getLogger(LearnSomeApplication.class);
 
     //获取指定名称的logger
     private static final Logger LOGGER_HEALTH = LoggerFactory.getLogger("health_logger");
 
     public static void main(String[] args) {
         SpringApplication.run(LearnSomeApplication.class, args);
-        LOGGER.info("application started");
         LOGGER_HEALTH.info("app started");
     }
 
